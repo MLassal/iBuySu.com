@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Version - conception" version="4">
+  <OBJECT>
+    <ID name="Version - conception" mc="Standard.Package" uid="a2db4589-4930-47d7-bc27-e85ae189dc14"/>
+    <PID name="ibuysu" mc="Standard.Package" uid="d9821024-9a9c-4044-bd5f-0a2e9a32414a"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Version - conception]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Diagramme - Séquence" mc="Standard.Package" uid="b53c96e7-82cb-49ea-9908-953b72da1a33"/>
+        <COMPID name="Diagramme - Classes" mc="Standard.Package" uid="aad7d70a-5b84-4e7d-8bc9-2d5af0a7d609"/>
+        <COMPID name="inerface - IHM" mc="Standard.Package" uid="74a81848-4cbc-4cce-9b8c-ad75dba37105"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

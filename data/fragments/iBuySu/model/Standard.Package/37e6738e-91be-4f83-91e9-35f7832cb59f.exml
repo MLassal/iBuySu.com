@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Diagramme - Séquence" version="4">
+  <OBJECT>
+    <ID name="Diagramme - Séquence" mc="Standard.Package" uid="37e6738e-91be-4f83-91e9-35f7832cb59f"/>
+    <PID name="Version - Analyse" mc="Standard.Package" uid="798dd942-2416-4252-9342-f66d0e68b38d"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Diagramme - Séquence]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Rechercher" mc="Standard.Interaction" uid="13f7d5f1-f1c7-42b0-9d1a-6be6e5bb4d27"/>
+        <COMPID name="S'authentifier" mc="Standard.Interaction" uid="b08a4518-10f0-402b-ba63-beb86c60428a"/>
+        <COMPID name="S'inscrire comme vendeur" mc="Standard.Interaction" uid="e8bbbba6-0314-4786-8d55-0051bfe4d807"/>
+        <COMPID name="S'inscrire comme acheteur" mc="Standard.Interaction" uid="1a8a5ef9-ee75-41d9-ae54-c0c649a6390e"/>
+        <COMPID name="Acheter" mc="Standard.Interaction" uid="f7215a7f-9f5f-4b57-8207-f673db2e8895"/>
+        <COMPID name="Enchérir" mc="Standard.Interaction" uid="582dc2c6-3ef7-46da-bd17-afb76f38b728"/>
+        <COMPID name="Laisser une évaluation" mc="Standard.Interaction" uid="d572f7fd-d616-4542-969c-d863055e387f"/>
+        <COMPID name="Créer vente directe" mc="Standard.Interaction" uid="341b37a1-6934-409a-ba19-5ae78d401196"/>
+        <COMPID name="Créer vente enchères" mc="Standard.Interaction" uid="093e3076-bc90-4e72-8319-2bbb139604c1"/>
+        <COMPID name="Accepter une vente" mc="Standard.Interaction" uid="b50e5713-f7db-4d13-aa4b-40cae594476d"/>
+        <COMPID name="Refuser vente" mc="Standard.Interaction" uid="81140c95-906b-4d1f-bf29-c43aafa0cef4"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

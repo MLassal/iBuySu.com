@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Diagramme - Use Case" version="4">
+  <OBJECT>
+    <ID name="Diagramme - Use Case" mc="Standard.Package" uid="1edae832-2f18-4bae-8e5f-9a4798f98e06"/>
+    <PID name="Version - Analyse" mc="Standard.Package" uid="798dd942-2416-4252-9342-f66d0e68b38d"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Diagramme - Use Case]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="User" mc="Standard.Actor" uid="77829719-e8a7-43c7-80b5-1e8190491e30"/>
+        <COMPID name="Acheteur" mc="Standard.Actor" uid="936bc347-cae2-4b6c-8d92-d9eaf00d9d96"/>
+        <COMPID name="Vendeur" mc="Standard.Actor" uid="d75d06d9-fdff-47c4-bdb6-ba4fa8644330"/>
+        <COMPID name="Rechercher" mc="Standard.UseCase" uid="973fea31-11df-499d-8e16-89001bd9c95c"/>
+        <COMPID name="S'authentifier" mc="Standard.UseCase" uid="8cb7f34d-4a6b-4e44-be27-f9e1732e00bf"/>
+        <COMPID name="S'inscrire comme vendeur" mc="Standard.UseCase" uid="af414606-94ff-4c8c-9b75-ffdf20cb53e3"/>
+        <COMPID name="S'inscrire comme acheteur" mc="Standard.UseCase" uid="32285c46-dd86-44f0-8cf1-be8f5ad615d6"/>
+        <COMPID name="Acheter" mc="Standard.UseCase" uid="b924adf4-8c89-4362-b67d-898366a1bd94"/>
+        <COMPID name="Enchérir" mc="Standard.UseCase" uid="8c820f29-ccf2-4385-b292-ee371294f4de"/>
+        <COMPID name="Laisser une évalutaion" mc="Standard.UseCase" uid="14a6719c-b23c-4848-a2f1-3a788a3e7ffa"/>
+        <COMPID name="Créer vente directe" mc="Standard.UseCase" uid="23fb6f10-a9d0-4f1b-8791-8cd938b7963a"/>
+        <COMPID name="Créer vente enchères" mc="Standard.UseCase" uid="0ec4a695-1654-42a3-bed8-f3d1b7ba69bb"/>
+        <COMPID name="Accepter vente" mc="Standard.UseCase" uid="1adbc5cd-59f7-4f33-904c-ad83eebc066f"/>
+        <COMPID name="Refuser Vente" mc="Standard.UseCase" uid="5cff1d76-95e4-47a3-85ac-d14a1f3dcadd"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Use Case: iBuySu" mc="Standard.UseCaseDiagram" uid="3c6069b6-2e7e-4990-99ce-8f2da6a62fc7"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

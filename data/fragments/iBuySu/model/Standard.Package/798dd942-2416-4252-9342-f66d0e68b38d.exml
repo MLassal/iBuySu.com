@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Version - Analyse" version="4">
+  <OBJECT>
+    <ID name="Version - Analyse" mc="Standard.Package" uid="798dd942-2416-4252-9342-f66d0e68b38d"/>
+    <PID name="ibuysu" mc="Standard.Package" uid="d9821024-9a9c-4044-bd5f-0a2e9a32414a"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Version - Analyse]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Diagramme - Use Case" mc="Standard.Package" uid="1edae832-2f18-4bae-8e5f-9a4798f98e06"/>
+        <COMPID name="Diragramme - Classes" mc="Standard.Package" uid="04c9a6b7-3638-4ff1-9e47-982f1fb704e2"/>
+        <COMPID name="Diagramme - Séquence" mc="Standard.Package" uid="37e6738e-91be-4f83-91e9-35f7832cb59f"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Diragramme - Classes" version="4">
+  <OBJECT>
+    <ID name="Diragramme - Classes" mc="Standard.Package" uid="04c9a6b7-3638-4ff1-9e47-982f1fb704e2"/>
+    <PID name="Version - Analyse" mc="Standard.Package" uid="798dd942-2416-4252-9342-f66d0e68b38d"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Diragramme - Classes]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Vendeur" mc="Standard.Class" uid="edf60c61-0b45-4a60-b609-b7894aa2b53e"/>
+        <COMPID name="User" mc="Standard.Class" uid="3866dbc7-b5d7-4506-8ade-00fcc4425aa1"/>
+        <COMPID name="Acheteur" mc="Standard.Class" uid="6e74e5f1-2e34-4524-9d5b-331266ada843"/>
+        <COMPID name="Vente" mc="Standard.Class" uid="dfd6226b-d843-407b-9884-c33bf56932f3"/>
+        <COMPID name="VenteEnchère" mc="Standard.Class" uid="425c499a-4ab4-40d3-af32-0dae4fa3709b"/>
+        <COMPID name="VenteDirecte" mc="Standard.Class" uid="31ec5433-f35e-4093-ace2-d3dd81dd0e8f"/>
+        <COMPID name="Produit" mc="Standard.Class" uid="05a38e8a-6da9-44f5-bbd8-a6728a271a18"/>
+        <COMPID name="iBuySU" mc="Standard.Class" uid="337b9555-6621-425d-bbb6-ea7446941503"/>
+        <COMPID name="Catégorie" mc="Standard.Class" uid="496e3d03-cf19-4a8e-94c2-1b18574af481"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagramme de classe Diragramme - Classes" mc="Standard.ClassDiagram" uid="0205fc07-1d2c-480c-849d-a33957ffafcf"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

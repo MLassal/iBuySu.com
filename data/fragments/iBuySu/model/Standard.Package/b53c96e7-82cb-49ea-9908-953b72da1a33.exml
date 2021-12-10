@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Diagramme - Séquence" version="4">
+  <OBJECT>
+    <ID name="Diagramme - Séquence" mc="Standard.Package" uid="b53c96e7-82cb-49ea-9908-953b72da1a33"/>
+    <PID name="Version - conception" mc="Standard.Package" uid="a2db4589-4930-47d7-bc27-e85ae189dc14"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Diagramme - Séquence]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Laisser une évaluation" mc="Standard.Interaction" uid="b666f57b-996d-4cb2-a1fe-f2f86a9eba25"/>
+        <COMPID name="Créer vente enchères" mc="Standard.Interaction" uid="8107f4cd-0cb6-4206-beec-2d4fa2c03e07"/>
+        <COMPID name="S'inscrire comme acheteur" mc="Standard.Interaction" uid="0c796226-2ed5-44c0-a416-3af2ec6daf6e"/>
+        <COMPID name="Enchérir" mc="Standard.Interaction" uid="d364e4c1-2d26-476f-9a61-dbfe161fa4b7"/>
+        <COMPID name="Refuser vente" mc="Standard.Interaction" uid="8e2ebac3-5645-4390-99df-5db5de159b3e"/>
+        <COMPID name="Créer vente directe" mc="Standard.Interaction" uid="e8a46aee-3638-4aa1-8adb-9fcc3dd9e41b"/>
+        <COMPID name="Accepter une vente" mc="Standard.Interaction" uid="65114eb9-ec39-4078-bc8c-5e3d060986a8"/>
+        <COMPID name="Rechercher" mc="Standard.Interaction" uid="78ab5dac-24fe-4b82-8127-313d3d763453"/>
+        <COMPID name="Acheter" mc="Standard.Interaction" uid="95bffc01-3258-4823-8cf6-3321add29e32"/>
+        <COMPID name="S'authentifier" mc="Standard.Interaction" uid="2663e7d6-f0fa-46cd-bc51-4476bdd4bc76"/>
+        <COMPID name="Interaction" mc="Standard.Interaction" uid="b667ed31-e983-44ec-b3ad-2a5d3ab76043"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

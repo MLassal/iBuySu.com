@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="ibuysu" version="4">
+  <OBJECT>
+    <ID name="ibuysu" mc="Standard.Package" uid="d9821024-9a9c-4044-bd5f-0a2e9a32414a"/>
+    <PID name="iBuySu" mc="Standard.Project" uid="14061e53-b972-4c45-a8a2-4ddabe2e0d84"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[ibuysu]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Version - Analyse" mc="Standard.Package" uid="798dd942-2416-4252-9342-f66d0e68b38d"/>
+        <COMPID name="Version - conception" mc="Standard.Package" uid="a2db4589-4930-47d7-bc27-e85ae189dc14"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

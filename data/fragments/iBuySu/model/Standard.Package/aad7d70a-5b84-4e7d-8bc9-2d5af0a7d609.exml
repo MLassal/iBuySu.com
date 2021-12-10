@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Diagramme - Classes" version="4">
+  <OBJECT>
+    <ID name="Diagramme - Classes" mc="Standard.Package" uid="aad7d70a-5b84-4e7d-8bc9-2d5af0a7d609"/>
+    <PID name="Version - conception" mc="Standard.Package" uid="a2db4589-4930-47d7-bc27-e85ae189dc14"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Diagramme - Classes]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Catégorie" mc="Standard.Class" uid="65e76288-b7e3-42b3-adbe-c1c4c4ba684c"/>
+        <COMPID name="Produit" mc="Standard.Class" uid="4a87ad9e-12bc-4f8e-b360-d34ff6a19f67"/>
+        <COMPID name="Vente" mc="Standard.Class" uid="750bd032-ac16-4a20-b123-1721030210f1"/>
+        <COMPID name="User" mc="Standard.Class" uid="c87d7286-57d9-4bd1-8822-cfdc6b204fea"/>
+        <COMPID name="Vendeur" mc="Standard.Class" uid="320645d7-c440-4037-9bc8-76ad8f17a8e8"/>
+        <COMPID name="Acheteur" mc="Standard.Class" uid="a82f0f91-9705-42bc-ba84-d0ef63bd87b0"/>
+        <COMPID name="VenteEnchère" mc="Standard.Class" uid="6f284e3b-a139-498f-812d-a74806c2dd1f"/>
+        <COMPID name="VenteDirecte" mc="Standard.Class" uid="a11e16be-f5ce-42af-90c3-47d643926353"/>
+        <COMPID name="iBuySU" mc="Standard.Class" uid="03563a78-2ae8-4572-b626-9df53f076578"/>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="JavaPackage" mc="Infrastructure.Stereotype" uid="01ec23a8-0000-0126-0000-000000000000"/>
+      </LINK>
+      <COMP relation="Product">
+        <COMPID name="Diagramme de classe Diragramme - Classes" mc="Standard.ClassDiagram" uid="4b6571b1-782d-4a2a-b07a-ae30522b9a19"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

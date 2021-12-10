@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="inerface - IHM" version="4">
+  <OBJECT>
+    <ID name="inerface - IHM" mc="Standard.Package" uid="74a81848-4cbc-4cce-9b8c-ad75dba37105"/>
+    <PID name="Version - conception" mc="Standard.Package" uid="a2db4589-4930-47d7-bc27-e85ae189dc14"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[inerface - IHM]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="IHM" mc="Standard.Class" uid="ed608707-a958-4515-991e-ed101d905310"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagramme - Classe IHM" mc="Standard.ClassDiagram" uid="bfe91608-c342-41d9-acd8-b5560d2342cf"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
