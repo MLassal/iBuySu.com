@@ -1,4 +1,4 @@
-package Diagramme - Classes;
+package DiagrammeClasse;
 
 
 public class VenteEnchère extends Vente {

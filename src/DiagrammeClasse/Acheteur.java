@@ -1,4 +1,4 @@
-package Diagramme - Classes;
+package DiagrammeClasse;
 
 
 public class Acheteur extends User {

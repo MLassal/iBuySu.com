@@ -1,9 +1,9 @@
-package Diagramme - Classes;
+package DiagrammeClasse;
 
 
 public class Catégorie {
     public String nomCatégorie;
 
-    public Produit ;
+    public Produit produit;
 
 }

@@ -1,4 +1,4 @@
-package Diagramme - Classes;
+package DiagrammeClasse;
 
 
 public abstract class Vente {

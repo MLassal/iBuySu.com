@@ -1,4 +1,4 @@
-package Diagramme - Classes;
+package DiagrammeClasse;
 
 
 public class iBuySU {
@@ -15,6 +15,7 @@ public class iBuySU {
     }
 
     public void inscriptionVendeur() {
+
     }
 
     public void enregistrerInfosVendeur() {

@@ -1,4 +1,4 @@
-package Diagramme - Classes;
+package DiagrammeClasse;
 
 
 public class Produit {
@@ -6,6 +6,6 @@ public class Produit {
 
     public String motsClés;
 
-    public Vente ;
+    public Vente vente;
 
 }
