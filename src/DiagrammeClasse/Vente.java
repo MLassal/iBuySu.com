@@ -17,4 +17,6 @@ public abstract class Vente {
       this.prix = prix;
     }
 
+    public String getNom(){return titre;}
+
 }

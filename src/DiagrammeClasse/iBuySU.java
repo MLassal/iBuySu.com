@@ -7,7 +7,8 @@ import java.util.List;
 public class iBuySU {
     public static List<Acheteur> listacheteur = new ArrayList<Acheteur> ();
     public static List<Vendeur> listvendeur = new ArrayList<Vendeur> ();
-    public static List<Vente> listventes = new ArrayList<Vente>();
+    public static List<VenteDirecte> listventesdirectes = new ArrayList<VenteDirecte>();
+    public static List<VenteEnchère> listventesencheres = new ArrayList<VenteEnchère>();
     public static User currentUser = null;
     
     public void rechercher(final String objetRecherche) {
@@ -17,25 +18,32 @@ public class iBuySU {
     }
 
     public static User getcurrentuser(){return currentUser;}
-    public String getrole(){
-    return "";
+    public static String getrole(){
+      if(currentUser==null){return "Visiteur";}
+      System.out.print(currentUser.getid().charAt(0));
+      if(currentUser.getid().charAt(0)=='A'){
+        //System.out.print(currentUser.getid().charAt(0));
+        return "Acheteur";
+      }
+      if(currentUser.getid().charAt(0)=='V'){
+        //System.out.print(currentUser.getid().charAt(0));
+        return "Vendeur";
+      }
+      else return "Visiteur";
+    
     }
     public static boolean demandeConnexion(String email, String mdp) {
       for(int i=0;i<listacheteur.size();i++){
-        if(email==listacheteur.get(i).getemail()){
-          System.out.print("Email trouver !");
-          if(listacheteur.get(i).getmdp()==mdp){
-             System.out.print("Mot de passe bon !");
+        if(email.equals(listacheteur.get(i).getemail())){
+          if(mdp.equals(listacheteur.get(i).getmdp())){
             currentUser=listacheteur.get(i);
             return true;
           }
         }
       }
       for(int i=0;i<listvendeur.size();i++){
-        if(email==listvendeur.get(i).getemail()){
-          System.out.print("Email trouver !");
-          if(listacheteur.get(i).getmdp()==mdp){
-            System.out.print("Mot de passe bon !");
+        if(email.equals(listvendeur.get(i).getemail())){
+          if(mdp.equals(listvendeur.get(i).getmdp())){
             currentUser=listvendeur.get(i);
             return true;
           }
@@ -81,11 +89,12 @@ public class iBuySU {
     public void évaluer() {
     }
 
-    public static void créerVenteDirecte() {
-      
+    public static void creerVenteDirecte(String titre, String description, String categorie, int prix) {
+      VenteDirecte ventedirecte = new VenteDirecte(titre, description, categorie, prix);
+      listventesdirectes.add(ventedirecte);
     }
 
-    public void créerVenteEnchères() {
+    public static void creerVenteEncheres() {
     }
 
     public void accepterVente() {
@@ -97,7 +106,19 @@ public class iBuySU {
     public void refuserVente() {
     }
 
-    public void rechercheProduit() {
+    public static List<Vente> rechercheProduit(String key) {
+      List<Vente> resultats = new ArrayList<Vente>();
+      for(Vente vente : listventesdirectes){
+        if(vente.getNom().contains(key)){
+          resultats.add(vente);
+        }
+      }
+      for(Vente vente : listventesencheres){
+        if(vente.getNom().contains(key)){
+          resultats.add(vente);
+        }
+      }
+      return resultats;
     }
 
 }

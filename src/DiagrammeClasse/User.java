@@ -1,7 +1,7 @@
 package DiagrammeClasse;
 
 
-public class User {
+public abstract class User {
     
     public String nom;
 
@@ -22,6 +22,6 @@ public class User {
     
   }
 
-  //public abstract String getid();
+  public abstract String getid();
   public String getemail(){return email;}
 }

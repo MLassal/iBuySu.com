@@ -6,8 +6,7 @@ public class IHM {
 
     public void initialiserIHM(){ 
         System.out.println("...............BIENVENUE SUR IBUYSU.COM...........\n");
-        //System.out.println("Vous etes connectés en tant que "+iBuySU.getrole());
-        System.out.println("Vous etes connectés en tant que ");
+        System.out.println("Vous etes connectés en tant que "+iBuySU.getrole());
         System.out.println("1 : Rechercher un article");
         System.out.println("2 : S'inscrire en tant que Vendeur");
         System.out.println("3 : S'inscrire en tant qu'Acheteur");
@@ -56,12 +55,13 @@ public class IHM {
       String mdp = sc.nextLine();
       boolean resultatVerification=iBuySU.demandeConnexion(email,mdp);
       if(resultatVerification){
-        System.out.print(" Connexion reussi \n");
-        System.out.print(iBuySU.getcurrentuser());
+        System.out.print(" Connexion reussie \n");
+        System.out.println(iBuySU.getcurrentuser());
         initialiserIHM();
         }
       else{
         System.out.print(" Connexion échoué, veuillez vérifier les informations rentrés \n");
+        initialiserIHM();
       }
 
     }
@@ -96,7 +96,7 @@ public class IHM {
         InscriptionAcheteurIHM();
         return ;
       }
-      System.out.println("Inscription reussi");
+      System.out.println("Inscription reussie");
       System.out.println(iBuySU.listacheteur.get((Acheteur.getcpt())-1));
       initialiserIHM();
 

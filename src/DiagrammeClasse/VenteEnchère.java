@@ -1,13 +1,13 @@
 package DiagrammeClasse;
 
 
-public class VenteEnchère extends Vente {
-    public String duréeVente;
+public class VenteEnchere extends Vente {
+    public String dureeVente;
 
-    public int montantEnchère;
+    public int montantEnchere;
 
-    public VenteEnchère(String titre, String description, String categorie, int prix){
+    public VenteEnchere(String titre, String description, String categorie, int prix){
       super(titre, description, categorie, prix);
-  }
+    }
 
 }
