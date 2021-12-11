@@ -6,8 +6,15 @@ public abstract class Vente {
 
     public String description;
 
-    public String catégorie;
+    public String categorie;
 
     public int prix;
+
+    public Vente(String titre, String description, String categorie, int prix){
+      this.titre = titre;
+      this.description = description;
+      this.categorie = categorie;
+      this.prix = prix;
+    }
 
 }

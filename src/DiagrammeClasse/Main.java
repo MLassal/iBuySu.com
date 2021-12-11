@@ -1,5 +1,9 @@
-public class Main implements IHM{
-    public static void main(){
-        inscriptionAcheteur();
+package DiagrammeClasse;
+
+public class Main{
+    public static void main(String[] args){
+      IHM ihm=new IHM();
+        ihm.initialiserIHM();
+        
     }
 }

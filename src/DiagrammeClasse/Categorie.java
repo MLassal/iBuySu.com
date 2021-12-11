@@ -1,8 +1,8 @@
 package DiagrammeClasse;
 
 
-public class Catégorie {
-    public String nomCatégorie;
+public class Categorie {
+    public String nomCategorie;
 
     public Produit produit;
 
