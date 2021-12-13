@@ -5,11 +5,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class iBuySU {
-    public static List<Acheteur> listacheteur = new ArrayList<Acheteur> ();
-    public static List<Vendeur> listvendeur = new ArrayList<Vendeur> ();
-    public static List<VenteDirecte> listventesdirectes = new ArrayList<VenteDirecte>();
-    public static List<VenteEnchère> listventesencheres = new ArrayList<VenteEnchère>();
-    public static User currentUser = null;
+    private static List<Acheteur> listacheteur = new ArrayList<Acheteur> ();
+    private static List<Vendeur> listvendeur = new ArrayList<Vendeur> ();
+    private static List<VenteDirecte> listventesdirectes = new ArrayList<VenteDirecte>();
+    private static List<VenteEnchere> listventesencheres = new ArrayList<VenteEnchere>();
+    private static List<Categorie> listcategories = new ArrayList<Categorie>();
+    private static User currentUser = null;
     
     public void rechercher(final String objetRecherche) {
     }
@@ -18,9 +19,10 @@ public class iBuySU {
     }
 
     public static User getcurrentuser(){return currentUser;}
+    
     public static String getrole(){
       if(currentUser==null){return "Visiteur";}
-      System.out.print(currentUser.getid().charAt(0));
+      //System.out.print(currentUser.getid().charAt(0));
       if(currentUser.getid().charAt(0)=='A'){
         //System.out.print(currentUser.getid().charAt(0));
         return "Acheteur";
@@ -32,6 +34,7 @@ public class iBuySU {
       else return "Visiteur";
     
     }
+    
     public static boolean demandeConnexion(String email, String mdp) {
       for(int i=0;i<listacheteur.size();i++){
         if(email.equals(listacheteur.get(i).getemail())){
@@ -77,13 +80,17 @@ public class iBuySU {
     public void enregistrerInfoAcheteur() {
     }
 
-    public void AchatDirect() {
+    public static void achatDirect(User user, Vente vente) {
+      vente.getListeAcheteurs().add((Acheteur)user);
     }
 
     public void checkValeurEnchère() {
     }
 
-    public void enchérir() {
+    public static void encherir(int montant, VenteEnchere vente) {
+      vente.ajouterEnchere(montant);
+      vente.getListeAcheteurs().add((Acheteur)iBuySU.getcurrentuser());
+      
     }
 
     public void évaluer() {
@@ -92,9 +99,13 @@ public class iBuySU {
     public static void creerVenteDirecte(String titre, String description, String categorie, int prix) {
       VenteDirecte ventedirecte = new VenteDirecte(titre, description, categorie, prix);
       listventesdirectes.add(ventedirecte);
+      ((Vendeur)iBuySU.getcurrentuser()).getListeVentesDirectes().add(ventedirecte);
     }
 
-    public static void creerVenteEncheres() {
+    public static void creerVenteEncheres(String titre, String description, String categorie, int prix, int dureeVente) {
+      VenteEnchere venteenchere = new VenteEnchere(titre, description, categorie, prix, dureeVente);
+      listventesencheres.add(venteenchere);
+      ((Vendeur)iBuySU.getcurrentuser()).getListeVentesEncheres().add(venteenchere);
     }
 
     public void accepterVente() {
@@ -104,6 +115,24 @@ public class iBuySU {
     }
 
     public void refuserVente() {
+    }
+
+    public static boolean existCategorie(String nom){
+      for(Categorie c : listcategories){
+        if(nom.equals(c.getNom())){
+          return true;
+        }
+      }
+      return false;
+    }
+
+    public static void ajouterCategorie(String nom){
+      if(existCategorie(nom)){
+        System.out.println("Cette catégorie existe déjà.");
+        return ;
+      }
+      Categorie c = new Categorie(nom);
+      listcategories.add(c);
     }
 
     public static List<Vente> rechercheProduit(String key) {
@@ -120,5 +149,38 @@ public class iBuySU {
       }
       return resultats;
     }
+
+    public static List<Vente> rechercheProduit(Categorie categorie) {
+      List<Vente> resultats = new ArrayList<Vente>();
+      for(Vente vente : listventesdirectes){
+        if(vente.getCategorie() == categorie.getNom()){
+          resultats.add(vente);
+        }
+      }
+      for(Vente vente : listventesencheres){
+        if(vente.getCategorie() == categorie.getNom()){
+          resultats.add(vente);
+        }
+      }
+      return resultats;
+    }
+
+
+    public static List<VenteDirecte> getListVentesDirectes(){
+      return listventesdirectes;
+    }
+
+    public static List<VenteEnchere> getListVentesEnchere(){
+      return listventesencheres;
+    }
+
+    public static List<Vendeur> getListVendeurs(){
+      return listvendeur;
+    }
+    public static List<Acheteur> getListAcheteurs(){
+      return listacheteur;
+    }
+  
+    
 
 }

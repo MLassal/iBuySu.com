@@ -1,20 +1,23 @@
 package DiagrammeClasse;
 
+import java.lang.Math;
+import java.util.ArrayList;
+import java.util.List;
+
 public class Acheteur extends User {
-    public static int cpt=0;
+    private static int cpt=0;
 
-    public String idAcheteur;
+    private String idAcheteur;
 
-    public String mdpAcheteur;
+    private String mdpAcheteur;
 
-    public double noteAcheteur;
+    private List<Double> notesAcheteur = new ArrayList<Double> ();
     
   public Acheteur(String nom,String prenom,String adresse,String telephone,String email,String mdp){
       super(nom,prenom,adresse,telephone,email);
       this.mdpAcheteur=mdp;
       cpt++;
       this.idAcheteur="A"+cpt;
-      this.noteAcheteur=0;
   }
 
   public static int getcpt(){ return cpt;}
@@ -22,8 +25,20 @@ public class Acheteur extends User {
   public String getemail(){return email;}
   public String getmdp(){return mdpAcheteur;}
 
-  public void miseAjourEvaluation() {
+  public void miseAjourEvaluation(double note) {
+    notesAcheteur.add(note);
   }
+
+  public double moyenneNote(){
+      if(notesAcheteur.size()==0){
+        return 0.0;
+      }
+      double s = 0;
+      for(double note : notesAcheteur){
+        s += note;
+      }
+      return Math.round((s/notesAcheteur.size())*100)/100.0;
+    }
     
   public String toString(){
       return "["+idAcheteur+"] : "+nom+" "+prenom+" "+email;

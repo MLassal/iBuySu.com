@@ -1,22 +1,56 @@
 package DiagrammeClasse;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public abstract class Vente {
-    public String titre;
+    private String titre;
 
-    public String description;
+    private String description;
 
-    public String categorie;
+    private String categorie;
 
-    public int prix;
+    private int prix;
+
+    private List<Acheteur> listeacheteurs = new ArrayList<Acheteur>();
+
+    private String statut = "Disponible";
+
 
     public Vente(String titre, String description, String categorie, int prix){
       this.titre = titre;
       this.description = description;
-      this.categorie = categorie;
       this.prix = prix;
+      this.categorie = categorie;
+      
     }
 
-    public String getNom(){return titre;}
+    public String getNom(){
+      return titre;
+      }
+    
+    public int getPrix(){
+      return prix;
+      }
+
+    public String getDescription(){
+      return description;
+    }
+
+    public List<Acheteur> getListeAcheteurs(){
+      return listeacheteurs;
+    }
+
+    public void statutFinalisee(){
+      this.statut = "Finalisee";
+    }
+
+    public String getStatut(){
+      return statut;
+    }
+
+    public String getCategorie(){
+      return categorie;
+    }
 
 }

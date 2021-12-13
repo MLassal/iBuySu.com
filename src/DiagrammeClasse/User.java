@@ -24,4 +24,11 @@ public abstract class User {
 
   public abstract String getid();
   public String getemail(){return email;}
+
+  public String getPrenom(){
+    return prenom;
+  }
+
 }
+
+  

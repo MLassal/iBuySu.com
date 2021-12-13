@@ -2,8 +2,14 @@ package DiagrammeClasse;
 
 
 public class Categorie {
-    public String nomCategorie;
+    private String nomCategorie;
 
-    public Produit produit;
+    public Categorie(String nom){
+      nomCategorie = nom;
+    }
+
+    public String getNom(){
+      return nomCategorie;
+    }
 
 }
